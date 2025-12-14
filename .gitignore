@@ -132,3 +132,10 @@ dist
 # Force include nutjs directory and all its contents
 !nutjs/
 !nutjs/**
+
+# But ignore node_modules within nutjs (they are dependencies)
+nutjs/**/node_modules/
+
+# macOS system files
+.DS_Store
+**/.DS_Store
